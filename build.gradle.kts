@@ -38,6 +38,7 @@ plugins {
 
 dependencies {
     implementation(project("crafted-gradle-module"))
+    implementation(project("spring-starter-module"))
 
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
