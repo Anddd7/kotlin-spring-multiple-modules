@@ -7,16 +7,16 @@ import org.springframework.test.web.servlet.MockMvc
 import org.springframework.test.web.servlet.get
 
 @WebMvcTest(value = [GoodbyeController::class])
-internal class HelloControllerTest {
+internal class GoodbyeControllerTest {
     @Autowired
     private lateinit var mockMvc: MockMvc
 
     @Test
-    fun `should print hello`() {
-        mockMvc.get("/hello")
+    fun `should print goodbye`() {
+        mockMvc.get("/goodbye")
             .andExpect {
                 status { isOk() }
-                content { string("Hello, this is the root project") }
+                content { string("Goodbye, this is the crafted gradle module project") }
             }
     }
 }
